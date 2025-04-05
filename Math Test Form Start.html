@@ -1,0 +1,78 @@
+<!-- Math Test Form Start -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .question {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Math Test</h1>
+    
+    <form id="mathTest">
+        <!-- Name Field -->
+        <div class="question">
+            <label for="studentName">Your Name:</label><br>
+            <input type="text" id="studentName" name="studentName" required>
+        </div>
+
+        <!-- Multiple Choice Question 1 -->
+        <div class="question">
+            <p>1. What is the value of π (pi) rounded to two decimal places?</p>
+            <input type="radio" name="q1" value="3.14" required> 3.14<br>
+            <input type="radio" name="q1" value="3.41"> 3.41<br>
+            <input type="radio" name="q1" value="3.12"> 3.12<br>
+            <input type="radio" name="q1" value="3.16"> 3.16
+        </div>
+
+        <!-- Multiple Choice Question 2 -->
+        <div class="question">
+            <p>2. Solve: 2x + 4 = 12</p>
+            <input type="radio" name="q2" value="2"> x = 2<br>
+            <input type="radio" name="q2" value="4" required> x = 4<br>
+            <input type="radio" name="q2" value="6"> x = 6<br>
+            <input type="radio" name="q2" value="8"> x = 8
+        </div>
+
+        <!-- Multiple Choice Question 3 -->
+        <div class="question">
+            <p>3. What is the square root (√) of 144?</p>
+            <input type="radio" name="q3" value="10"> 10<br>
+            <input type="radio" name="q3" value="12" required> 12<br>
+            <input type="radio" name="q3" value="14"> 14<br>
+            <input type="radio" name="q3" value="16"> 16
+        </div>
+
+        <!-- Word Problem -->
+        <div class="question">
+            <p>4. A train travels at a speed of 60 miles per hour (×). If the journey takes 2.5 hours, calculate the total distance traveled. Show your work.</p>
+            <textarea name="wordProblem" rows="4" cols="50" required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Submit Test</button>
+    </form>
+</body>
+</html>
+<!-- Math Test Form End -->
