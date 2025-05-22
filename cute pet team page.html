@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Pet Team</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f3f7;
+    }
+    .nav {
+      background: #313866;
+      padding: 16px 0;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      text-align: center;
+    }
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 100px auto 0 auto; /* add top margin for nav */
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    .team-member {
+      clear: both;
+      overflow: auto;
+      margin-bottom: 36px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e0e3ea;
+    }
+    .member-image {
+      float: left;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-right: 24px;
+      object-fit: cover;
+      border: 3px solid #313866;
+      background: #e6e7ee;
+    }
+    .member-bio {
+      overflow: hidden;
+    }
+    .member-name {
+      font-size: 1.35em;
+      font-weight: bold;
+      color: #313866;
+      margin-top: 0;
+      margin-bottom: 6px;
+    }
+    @media (max-width: 600px) {
+      .member-image {
+        float: none;
+        display: block;
+        margin: 0 auto 16px auto;
+      }
+      .container {
+        margin-top: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Team</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="container">
+    <div class="team-member">
+      <img src="elephant.jpg" alt="Eleanor the Elephant" class="member-image">
+      <div class="member-bio">
+        <p class="member-name">Eleanor the Elephant</p>
+        <p>
+          Eleanor is the team’s wise reader and loves to share her knowledge from her favorite books. When it comes to problem-solving, she never forgets a detail and always brings great ideas to the table!
+        </p>
+      </div>
+    </div>
+    <div class="team-member">
+      <img src="sheep.jpg" alt="Shep the Sheep" class="member-image">
+      <div class="member-bio">
+        <p class="member-name">Shep the Sheep</p>
+        <p>
+          Shep is our adventurous spirit and official morale booster. His Texan cowboy hat is always tipped with confidence, and his positive attitude helps the team stay on the right track.
+        </p>
+      </div>
+    </div>
+    <div class="team-member">
+      <img src="dog.jpg" alt="Goldie the Golden Retriever" class="member-image">
+      <div class="member-bio">
+        <p class="member-name">Goldie the Golden Retriever</p>
+        <p>
+          Goldie is our enthusiastic greeter and brings joy to every meeting. Sporting a handsome tie, he ensures everyone feels welcome and keeps the team's spirits high.
+        </p>
+      </div>
+    </div>
+    <div class="team-member">
+      <img src="parrot.jpg" alt="Professor Blue the Parrot" class="member-image">
+      <div class="member-bio">
+        <p class="member-name">Professor Blue the Parrot</p>
+        <p>
+          Professor Blue is the brains of the outfit, always ready with a clever remark. With sharp vision (thanks to those stylish glasses), he oversees details and adds creative color to the team!
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
