@@ -1,0 +1,40 @@
+.grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  min-height: 100vh;
+  padding: 16px;
+  background: #fafafa;
+}
+
+.section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.info h1 { margin: 0 0 8px 0; }
+.date { text-align: right; }
+
+.flex-puzzle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border: 2px solid #eee;
+  padding: 12px;
+  background: #e0f8fa;
+}
+.flex-puzzle img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+.hidden-piece {
+  display: none;
+}
+
