@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.scorecard-table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.12);
+}
+
+.scorecard-table th,
+.scorecard-table td {
+  border: 1px solid #bbb;
+  padding: 10px 18px;
+  text-align: center;
+  background: #fff;
+}
+
+.scorecard-table th {
+  background: #005183;
+  color: #fff;
+}
+
+.scorecard-table tr:nth-child(even) {
+  background: #e8f4fa;
+}
+
+/* --- Pseudo-class example: row highlight on hover --- */
+.scorecard-table tr:hover {
+  background: #ffed88;
+}
